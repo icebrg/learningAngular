@@ -21,6 +21,12 @@ Thoughts and Notes on learning AngularJS, especially from a Java background.
 * Other frameworks to leverage
 * Browser Issues
 
+## Tutorials/Learning
+
+The official tutorial is the place to start: http://docs.angularjs.org/tutorial
+
+Where after that?
+
 ## Modularity & Code organization
 
 For example, this seems like a thoughtful discussion of the issues:
@@ -28,10 +34,6 @@ For example, this seems like a thoughtful discussion of the issues:
 http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript
 
 What's the right way to organize the code? Small projects don't matter so much, but large projects will care a lot...
-
-## Tutorials/Learning
-
-TODO
 
 ## Building
 
