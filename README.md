@@ -43,7 +43,13 @@ TODO
 
 ### Frameworks
 
-TODO 
+For unit testing, the tutorial uses Jasmine. What do you use?
+
+For end-to-end tests, the tutorial uses Angular's end-to-end runner. However, [Angular's own docs](http://docs.angularjs.org/guide/dev_guide.e2e-testing) say consider using [Protractor](https://github.com/angular/protractor) instead. Which do you use (or what do you use) and why?
+
+### Running
+
+The tutorial uses Karma with node. What do you use?
 
 ### Mocking
 
