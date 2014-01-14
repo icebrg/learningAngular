@@ -64,7 +64,7 @@ TODO
 
 ## Building and Deploying
 
-I've begun looking at (grunt)[http://gruntjs.com]. Seems like it does a lot. Don't yet understand the production use case model.
+I've begun looking at [grunt](http://gruntjs.com). Seems like it does a lot. Don't yet understand the production use case model.
 
 Other tools you use in addition or instead of grunt?
 
