@@ -18,7 +18,7 @@ Thoughts and Notes on learning AngularJS, especially from a Java background.
     * Frameworks
     * Running
     * Mocking
-* Avoiding missing code/resouces at runtime
+* Building and deploying
 * Other frameworks to leverage
 * Browser Issues
 * Tutorials/Learning
@@ -66,9 +66,11 @@ The tutorial uses [Karma](http://karma-runner.github.io/0.8/index.html) with nod
 
 TODO
 
-## Avoiding missing code/resouces at runtime
+## Building and Deploying
 
-TODO
+I've begun looking at (grunt)[http://gruntjs.com]. Seems like it does a lot. Don't yet understand the production use case model.
+
+Other tools you use in addition or instead of grunt?
 
 ## Other frameworks to leverage
 
