@@ -35,7 +35,7 @@ Where after that?
 
 ["That wasn't flying, it was falling with style."*](http://www.youtube.com/watch?v=DwN6efmhp7E)
 
-We've got [js-hint](http://www.jshint.com/install/). 
+We've got [JShint](http://www.jshint.com/install/). 
 We've got [JSLint](http://www.jslint.com).
 
 Any other style tools?
