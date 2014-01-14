@@ -12,8 +12,8 @@ Thoughts and Notes on learning AngularJS, especially from a Java background.
 ## Topics
 
 * The Code
-    * Modularity & Code organization
     * Style
+    * Modularity & Code organization
 * Tutorials/Learning
 * Testing
     * Frameworks
