@@ -47,23 +47,22 @@ Which do you use and how do you integrate it into your process?
 
 ### Modularity & Code organization
 
-For example, this seems like a thoughtful discussion of the issues:
+What's the right way to organize the code? Small projects don't matter so much, but large projects will care a lot... For example, this seems like a thoughtful discussion of the issues: http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript
 
-http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript
-
-What's the right way to organize the code? Small projects don't matter so much, but large projects will care a lot...
+How do you organize your code so it's testable and also ready for production use?
+How do you package things up?
 
 ## Testing
 
 ### Frameworks
 
-For unit testing, the tutorial uses Jasmine. What do you use?
+For unit testing, the tutorial uses [Jasmine](http://pivotal.github.io/jasmine/). What do you use?
 
 For end-to-end tests, the tutorial uses Angular's end-to-end runner. However, [Angular's own docs](http://docs.angularjs.org/guide/dev_guide.e2e-testing) say consider using [Protractor](https://github.com/angular/protractor) instead. Which do you use (or what do you use) and why?
 
 ### Running
 
-The tutorial uses Karma with node. What do you use?
+The tutorial uses [Karma](http://karma-runner.github.io/0.8/index.html) with node. What do you use?
 
 ### Mocking
 
