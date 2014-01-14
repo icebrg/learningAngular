@@ -35,11 +35,7 @@ We've got [JSLint](http://www.jslint.com).
 
 Any other style tools?
 
-Which do you use and how do you integrate it into your process?
-
-* How to run automatically?
-* How to "fail the build" when problems arise?
-
+Which do you use and how do you integrate it into your process? Grunt?
 
 \+ http://www.youtube.com/watch?v=2VSYmGSJtCA
 
