@@ -22,6 +22,7 @@ Thoughts and Notes on learning AngularJS, especially from a Java background.
 * Avoiding missing code/resouces at runtime
 * Other frameworks to leverage
 * Browser Issues
+* What Have I forgotten?
 
 ## Tutorials/Learning
 
@@ -77,6 +78,10 @@ TODO
 TODO
 
 ## Browser Issues
+
+TODO
+
+## What Have I forgotten?
 
 TODO
 
