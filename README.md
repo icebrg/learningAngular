@@ -31,17 +31,9 @@ Where after that?
 
 ## The Code
 
-### Modularity & Code organization
-
-For example, this seems like a thoughtful discussion of the issues:
-
-http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript
-
-What's the right way to organize the code? Small projects don't matter so much, but large projects will care a lot...
-
 ### Style
 
-["That wasn't flying, it was falling with style."](http://www.youtube.com/watch?v=DwN6efmhp7E)
+["That wasn't flying, it was falling with style."*](http://www.youtube.com/watch?v=DwN6efmhp7E)
 
 We've got [js-hint](http://www.jshint.com/install/). 
 We've got [JSLint](http://www.jslint.com).
@@ -50,6 +42,16 @@ Any other style tools?
 
 Which do you use and how do you integrate it into your process?
 
+* How to run automatically?
+* How to "fail the build" when problems arise?
+
+### Modularity & Code organization
+
+For example, this seems like a thoughtful discussion of the issues:
+
+http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript
+
+What's the right way to organize the code? Small projects don't matter so much, but large projects will care a lot...
 
 ## Testing
 
@@ -78,3 +80,5 @@ TODO
 ## Browser Issues
 
 TODO
+
+* http://www.youtube.com/watch?v=2VSYmGSJtCA
