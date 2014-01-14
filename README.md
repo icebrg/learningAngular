@@ -14,7 +14,6 @@ Thoughts and Notes on learning AngularJS, especially from a Java background.
 * The Code
     * Style
     * Modularity & Code organization
-* Tutorials/Learning
 * Testing
     * Frameworks
     * Running
@@ -22,19 +21,14 @@ Thoughts and Notes on learning AngularJS, especially from a Java background.
 * Avoiding missing code/resouces at runtime
 * Other frameworks to leverage
 * Browser Issues
+* Tutorials/Learning
 * What Have I forgotten?
-
-## Tutorials/Learning
-
-The official tutorial is the place to start: http://docs.angularjs.org/tutorial
-
-Where after that?
 
 ## The Code
 
 ### Style
 
-["That wasn't flying, it was falling with style."*](http://www.youtube.com/watch?v=DwN6efmhp7E)
+["That wasn't flying, it was falling with style."+](http://www.youtube.com/watch?v=DwN6efmhp7E)
 
 We've got [JShint](http://www.jshint.com/install/). 
 We've got [JSLint](http://www.jslint.com).
@@ -45,6 +39,9 @@ Which do you use and how do you integrate it into your process?
 
 * How to run automatically?
 * How to "fail the build" when problems arise?
+
+
+\+ http://www.youtube.com/watch?v=2VSYmGSJtCA
 
 ### Modularity & Code organization
 
@@ -81,8 +78,12 @@ TODO
 
 TODO
 
+## Tutorials/Learning
+
+The official tutorial is the place to start: http://docs.angularjs.org/tutorial
+
+Where after that?
+
 ## What Have I forgotten?
 
 TODO
-
-* http://www.youtube.com/watch?v=2VSYmGSJtCA
