@@ -30,7 +30,7 @@ Thoughts and Notes on learning AngularJS, especially from a Java background.
 
 ["That wasn't flying, it was falling with style."+](http://www.youtube.com/watch?v=DwN6efmhp7E)
 
-We've got [JShint](http://www.jshint.com/install/). 
+We've got [JSHint](http://www.jshint.com/install/). 
 We've got [JSLint](http://www.jslint.com).
 
 Any other style tools?
@@ -44,7 +44,7 @@ Which do you use and how do you integrate it into your process? Grunt?
 What's the right way to organize the code? Small projects don't matter so much, but large projects will care a lot... For example, this seems like a thoughtful discussion of the issues: http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript
 
 How do you organize your code so it's testable and also ready for production use?
-How do you package things up?
+How do you package things up and/or deploy them?
 
 ## Testing
 
@@ -70,11 +70,11 @@ Other tools you use in addition or instead of grunt?
 
 ## Other frameworks to leverage
 
-TODO
+There are so many. Which play nicely with Angular? Which don't?
 
 ## Browser Issues
 
-TODO
+I'm sure they exist, but I've been out of the loop. Please share.
 
 ## Tutorials/Learning
 
@@ -84,4 +84,4 @@ Where after that?
 
 ## What Have I forgotten?
 
-TODO
+What questions should I have asked that I haven't? What is a pain point I haven't mentioned? What is a really cool thing I don't know about?
