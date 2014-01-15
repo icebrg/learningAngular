@@ -60,7 +60,7 @@ The tutorial uses [Karma](http://karma-runner.github.io/0.8/index.html) with nod
 
 ### Mocking
 
-TODO
+I don't quite grok the angular mocking stuff. At this point it's still magic. Can anyone explain?
 
 ## Building and Deploying
 
