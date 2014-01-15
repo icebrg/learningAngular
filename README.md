@@ -84,4 +84,6 @@ Where after that?
 
 ## What Have I forgotten?
 
-What questions should I have asked that I haven't? What is a pain point I haven't mentioned? What is a really cool thing I don't know about?
+* What questions should I have asked that I haven't?
+* What is a pain point I haven't mentioned?
+* What is a really cool thing I don't know about?
