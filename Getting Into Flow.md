@@ -1,4 +1,4 @@
-# Getting With the Flow
+# Getting Into Flow
 
 There's a lot to learn with Angular. We spent time talking at the Angular Lunch on 2014-01-15 about a lot of the things which impede getting down to the serious business of learning Angular. These notes try to capture the essence of our conversation, so others can get into "flow" with learning Angular.
 
