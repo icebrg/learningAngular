@@ -2,9 +2,45 @@
 
 There's a lot to learn with Angular. We spent time talking at the Angular Lunch on 2014-01-15 about a lot of the things which impede getting down to the serious business of learning Angular. These notes try to capture the essence of our conversation, so others can get into "flow" with learning Angular.
 
-## Raw notes
+## Style and Organization
 
-* JSHint - lets you disagree with Doug C. if you want
+### Style
+
+Use a style checker. You can use [JSLint](http://www.jslint.com) if you are okay having Doug Crockford define good style (and change his mind). If you want to be able to alter the checking to match your sensibilities, use [JSHint](http://www.jshint.com).
+
+### Organization
+
+Kyle Cordes suggests you pretend you're using Java and make the file path and file name the same as the module name. For example, if you have a module named 'my.cool.Module', then you want ./my/cool/Module.js to contain that module.
+
+## Keeping things moving
+
+Automate the things you can. For example, you don't want the files in your browser to get out-of-date with what you've written. You don't want to have to run minification yourself. You don't want to do anything by hand you can automate.
+
+There are several tools to do this sort of thing, amongst them grunt, brunch, and gulp. Right now many people like to use grunt, though even it is currently at version 0.4.x and not really mature. Be aware if using grunt that you end up needing lots of plug-ins and they frequently break. It seems the "official" (grunt-contrib*) plug-ins are more likely to be stable and correct.
+
+Grunt does seem to do a good job of automatically running JSHint/JSLint and watching in the background for changes to refresh the files in the browser.
+
+## Avoiding out-of-date templates
+
+Browsers will cache, sometimes aggressively. To avoid having some tempaltes get updated and others be older, cached versions, you can use a grunt plug-in to bundle up all the templates and populate the browser cache by URI in one go. This way you don't end up with a mix of old and new.
+
+## Bundling up files
+
+In general, you want to bundle files likely to change together. For example, you can package all the third-party Javascript in one file (use grunt to concatenate them together).
+
+If your application is small enough, you can concatenate all your code into one file. Make sure to use a hash or version number in the file, so that aggressive browser caching doesn't result in a disconnect between your code and other things you depend upon (such as your third-party javascript).
+
+For larger applications, break up the code into groups where it's more likely changes to code will be contained within a single group (or for really large apps, in a smaller number of groups).
+
+Performance issues seem to arise more from old browsers than from the initial download of the application files, so don't worry about file size until you see it actually manifest as an issue (it probably won't).
+
+## Iterative development
+
+### Leave the Chrome Alone
+
+Jasmine and other testing tools spawn one or more versions of Chrome in which to run their tests. _Don't touch it_. It's not there for you to use, it's not where your test results show up. It's an artifact of the fact that we don't have a good environment to test Javascript code in other than actual browsers (though some people seem to be having success with PhantomJS).
+
+## Raw notes
 
 Learning resources
 * Best Angular book? No.
@@ -14,22 +50,6 @@ Learning resources
 * Egghead.io videos - very good; worth the cost
 
 
-* Alternatives to grunt - brunch and gulp
-* grunt
-  is 0.4.x and it shows - need tons of plug-ins and they frequently break
-  some things it does quite well
-    running JSHint
-    watching in background to refresh browser
-  prefer the "official" grunt-contrib* ones (more likely to be stable & correct)
-* code modularization
-	angular-seed was a terrible failure
-	Kyle - pretend you're using java and pretend that that angular module name has to match the file name.
-        ./my/cool/Module.js -> my.cool.Module <- entire module
-* build process
-	"building is suffering" -- Kyle :-)
-* Use a grunt plug-in to bundle up all the templates and populate the cache by URI so you don't end up with stale templates
-* CSS, index.html, all the app javascript in one file, all the 3rd part javascript in one other file
-* The file names include a hash/version to avoid browser caches from delivering an old file. - break it down by groups of things you think will be changing or not changing
 * Performance issues seem to arise more from old browswers than from pulling down the app files
 * Pay no attention to the chrome browser when running unit tests. DON'T TOUCH IT!
 * Some use PhantomJS - Poltergeist gave them problems
