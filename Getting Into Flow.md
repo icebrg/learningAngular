@@ -34,51 +34,32 @@ For larger applications, break up the code into groups where it's more likely ch
 
 Performance issues seem to arise more from old browsers than from the initial download of the application files, so don't worry about file size until you see it actually manifest as an issue (it probably won't).
 
+Don't forget that Angular depends on argument names to do it's injection. If you're going to minify the code, you need to use inline bracket notation (or an $inject property). You can maintain the array of names manually, or you can use the grunt-ng-min plug-in to generate the names for you prior to performing minification.
+
 ## Iterative development
 
 ### Leave the Chrome Alone
 
-Jasmine and other testing tools spawn one or more versions of Chrome in which to run their tests. _Don't touch it_. It's not there for you to use, it's not where your test results show up. It's an artifact of the fact that we don't have a good environment to test Javascript code in other than actual browsers (though some people seem to be having success with PhantomJS).
+Jasmine and other testing tools spawn one or more versions of Chrome in which to run their tests. _Don't touch it_. It's not there for you to use, it's not where your test results show up. It's an artifact of the fact that we don't have a good environment to test Javascript code in other than actual browsers.
 
-## Raw notes
+### Alternatives to running in a "background browser"
 
-Learning resources
-* Best Angular book? No.
-* "AngularJS fundamentals" on pluralsight
-* "AngularJS best practices" on pluralsight
-* AngularJS best practices on YouTube from angular meetup - but know it's out-of-date
-* Egghead.io videos - very good; worth the cost
+Some people are apparently having success with PhantomJS, though it will sometimes behave incorrectly things like allowing clicks through to buttons when in a real browser something would be obscuring the button.
 
+Current consensus as of the time of this writing seems to be a move away from the Angular end-to-end runner to [Protractor](https://github.com/angular/protractor). It is not as mature as we'd like but a lot of energy is going into it.
 
-* Performance issues seem to arise more from old browswers than from pulling down the app files
-* Pay no attention to the chrome browser when running unit tests. DON'T TOUCH IT!
-* Some use PhantomJS - Poltergeist gave them problems
-  sometimes Phantom fails when something is in front of a button and clicks through to the button
-* Don't use Angular's end-to-end runner.
-  Protractor not quite ready? But this is where a lot of energy is focused.
-  End-to-end will get messed up by having polling in the background
-  Capybara - ruby thing so not as relevant unless coming from Rails
-* CORS - cross-origin resource sharing
-   4/5 headers you have to get right
-   browsers do "horribly toxic caching of them"
-   works fine once you get it right
-* Common to have index.html on site where services
-* grunt-ng-min - need to run before minification or angular injection will bust
+### Test, test test
 
-Doesn't run with scissors
-* Twitter Bootstrap
-    Twitter Bootstrap + ui-bootstrap + angular-strap + others?
-    You can do a lot with just Twitter Bootstrap
+Always test with every browser you plan to support. Otherwise, you're pretty much guaranteed to have things that break.
 
-* Always test on every browser you want to let users run
-* Try to avoid IE 8, as it requires hacks (documented) and next major version will drop support.
+### Let bygones be bygones
+Try to avoid IE 8, as it requires (documented) hacks and next major version of Angular will drop support for it.
 
-Directives
-* If you're going to make a directive, make the simplest one you can. As in write a directive that has ZERO logic and some static HTML and then go from there.
+## Learning Resources
 
-Directives that create widgets
-Directives that add event handling
-Directives that break up a large page into sections
+Here are some online learning resources recommended by people more knowledgeable about Angular than myself:
 
-Directives that are to wrap up DOM manipulation versus wrapping up a chunk of your app as a directive.
+* [AngularJS fundamentals](http://pluralsight.com/training/courses/TableOfContents?courseName=angularjs-fundamentals&highlight=)
+* [Angular Best Practices](http://pluralsight.com/training/courses/TableOfContents?courseName=angular-best-practices&highlight=)
+* There are a [bunch of videos](https://egghead.io/tags/AngularJS) covering various aspects of Angular on Egghead.io
 
