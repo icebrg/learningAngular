@@ -50,7 +50,7 @@ How do you package things up and/or deploy them?
 
 ### Frameworks
 
-For unit testing, the tutorial uses [Jasmine](http://pivotal.github.io/jasmine/). What do you use?
+For unit testing, the tutorial uses [Jasmine](https://jasmine.github.io/). What do you use?
 
 For end-to-end tests, the tutorial uses Angular's end-to-end runner. However, [Angular's own docs](http://docs.angularjs.org/guide/dev_guide.e2e-testing) say consider using [Protractor](https://github.com/angular/protractor) instead. Which do you use (or what do you use) and why?
 
